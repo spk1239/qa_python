@@ -67,7 +67,7 @@ class TestBooksCollector:
         collector.add_new_book("Шерлок Холмс")
         collector.add_book_in_favorites("Шерлок Холмс")
         collector.delete_book_from_favorites("Шерлок Холмс")
-        assert len(collector.get_list_of_favorites_books()) == 0
+        assert len(collector.favorites) == 0
 
     #Получение списка избранных книг
     def test_get_list_of_favorites_books_one_book_getting_book(self, collector):
